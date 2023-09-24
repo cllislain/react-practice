@@ -1,0 +1,9 @@
+
+.details{
+  font-weight: bold;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 500px;
+  height: auto;
+}

@@ -1,0 +1,61 @@
+.app {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gameboard {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border: solid 2px black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CIRCLE {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 15px solid blue;
+    box-sizing: border-box;
+}
+
+.CROSS {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.CROSS:before, .CROSS:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.CROSS:before{
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+.CROSS:after{
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}

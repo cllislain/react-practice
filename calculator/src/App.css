@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  background-color: black;
+  border-radius: 15px;
+  width: 200px;
+}
+
+.actionRow {
+  display: flex;
+  gap: 15px;
+}
+
+.actionRow:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.resultBar {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(159, 226, 173);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: right;
+}
+
+.actionButton {
+  height: 40px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+
+.actionButton:active{
+  opacity: 0.8;
+}
