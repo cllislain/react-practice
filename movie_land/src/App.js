@@ -23,8 +23,9 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1 classname="title">MovieLand</h1>
 
+      <a href="" className="movie-title"><h1 classname="title">MovieLand</h1></a>
+    
       <div className="search">
         <input
           value={searchTerm}
